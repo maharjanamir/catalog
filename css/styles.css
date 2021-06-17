@@ -7,7 +7,66 @@ body{
 	max-width: 1200px;
 	margin: 0 auto;
 }
+
+/*------------header---------------*/
+
+.head-nav{
+    background-color: rgb(56, 83, 216);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(74, 109, 227);
+}
+.head-col1{
+    display: flex;
+}
+.head-col1 i{
+    border-right: 1px solid rgb(74, 109, 227);
+    padding: 20px;
+}
+
+.head-col1-2 {
+    display: flex;
+}
+.head-col1-2 i:nth-child(1){
+    padding-right: 8px;
+    border-right: none;
+}
+
+.head-col1-2-p{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgb(74, 109, 227);
+}
+.head-col1-2-p p:nth-child(1){
+    font-size: 8px;
+    letter-spacing: 3px;
+}
+.head-col1-2-p p:nth-child(2){
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.head-col2 h1{
+    padding: 12px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.head-col3{
+    display: flex;
+    flex-direction: row-reverse;
+  
+}
+.head-col3 i{
+    padding: 20px;
+    border-left: 1px solid rgb(74, 109, 227);
+}
+
 /*------------main----------------*/
+
 
 main{
 	background-image: url("E:/Medicos Internship/web-2/images/A-Bomber-Jacket.jpg");
@@ -100,6 +159,10 @@ main{
 .store-4{
 	width: 25%;
 }
+img{
+	width: 100%;
+	object-fit: contain;
+}
 .Clothing, .Equipment, .Shoes, .sp-nut{
     padding: 50px 0px;
 }
@@ -122,4 +185,317 @@ li {
 .i-name{
 	text-align: center;
 }
+
+/* <!-- -----------newsletter---------- --
+
+.newsletter{
+    width: 100%;
+    background-color: rgb(239, 240,242);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15rem 8rem 8rem;
+    line-height: 3;
+}
+.newsletter h1{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.newsletter p{
+    line-height: 1;
+    text-align: center;
+    font-size: 10px;
+}
+
+.newsletter input{
+    height: 50px;
+    width: 40%;
+    border-radius: 25px;
+    border-style: none;
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+
+ /* ----------footer----------- 
+.foot-nav{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    padding: 5rem 10rem;
+    background-color: rgb(35,35,35);
+    color: white;
+    line-height: 2;
+    
+}
+
+.foot-col1{
+    
+  flex: .3;
+ 
+}
+.foot-col1 h1{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+   
+}
+
+.foot-col1 p{
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: rgb(83,83,83);
+}
+
+.foot-col1 ul{
+    display: flex;
+}
+
+.foot-col1 ul li{
+  font-size: 12px;
+  list-style-type: none;
+  font-size: 12px;
+  padding-right: 15px;
+  color: rgb(132, 132,132);
+  
+}
+
+
+.foot-col2{
+    flex:.15 ;
+    display: flex;
+    flex-direction: column;
+   
+}
+.foot-col2 h1{
+    font-size: 20px;
+
+}
+.foot-col2 ul{
+display: flex;
+flex-direction: column;
+}
+.foot-col2 ul li{
+    list-style-type: none;
+    font-size: 12px;
+    color: rgb(132, 132,132);
+}
+
+
+
+.foot-col3{
+    flex:.15;
+}
+.foot-col3 h1{
+    font-size: 20px;
+}
+.foot-col3 ul{
+    display: flex;
+    flex-direction: column;
+
+}
+.foot-col3 ul li{
+    list-style-type: none;
+    font-size: 12px;
+    color: rgb(132, 132,132);
+}
+.foot-col4{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+.foot-col4-top{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 10px;
+ 
+}
+
+.foot-col4-bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-col4-bottom h1{
+    font-size: 12px;
+    color: rgb(132, 132,132);
+}
+.foot-col4-bottom-icon{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.foot-col4-bottom-icon i{
+    padding-left: 20px;
+}
+
+
+
+
+
+
+
+ ----------media-query for tablet----------- 
+
+ @media screen and ( max-width: 900px)
+{
+
+/* ----------header----------- 
+.head-col1 i{padding: 15px;
+}
+.head-col1-2 i:nth-child(1){
+    padding-right: 12px;
+}
+.head-col1-2-p{
+    padding: 14px;
+}
+.head-col1-2-p p:nth-child(1){
+    font-size: 7px;
+    letter-spacing: 2px;
+}
+.head-col1-2-p p:nth-child(2){
+    font-size: 7px;
+    letter-spacing: 2px;
+}
+.head-col2 h1{
+    padding: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.head-col3 i{
+    padding: 15px;
+}
+   
+
+/* <!-- -----------newsletter---------- --> 
+
+.newsletter{
+    padding: 15rem 5rem 8rem;
+}
+.newsletter h1{
+   font-size: 20px;
+}
+
+.newsletter input{
+   font-size: 10px;
+   width: 40%;
+}
+
+
+/* <!-- -----------footer---------- --> 
+.foot-nav{
+    padding: 4rem 7rem;
+    line-height: 1.5;
+}
+
+.foot-col1 h1{
+      font-size: 15px;
+ }
+  
+.foot-col1 p{
+    font-size: 8px;
+      
+}
+  
+.foot-col1 ul li{
+    font-size: 10px;
+    padding-right: 10px;  
+ }
+  
+.foot-col2 h1{
+      font-size: 15px;
+  
+  }
+  
+.foot-col2 ul li{
+      font-size: 10px;  
+  }
+.foot-col3 h1{
+      font-size: 15px;
+  } 
+.foot-col3 ul li{   
+      font-size: 10px;
+  } 
+
+  .foot-col4-top{
+   
+    margin-top: 4px;
+ 
+}
+
+.foot-col4-bottom h1{
+      font-size: 10px;  
+  }
+.foot-col4-bottom-icon i{
+      padding-left: 15px;
+  }
+  
+
+
+
+
+
+}     
+
+/* ----------media-query for Mobiles----------- 
+@media screen and ( max-width: 500px)
+{
+
+
+/* ----------header----------- 
+.head-col1 i{
+    padding: 12px;
+}
+.head-col1-2 i:nth-child(1){
+    border-right: 1px solid rgb(74, 109, 227);
+}
+.head-col1-2-p{
+    display: none;
+}
+.head-col2 h1{
+    padding: 8px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.head-col3 i{
+    padding: 12px;
+}
+
+
+/* <!-- -----------newsletter---------- --> 
+
+.newsletter{
+    padding: 15rem 3rem 8rem;
+}
+.newsletter h1{
+   font-size: 15px;
+}
+
+.newsletter input{
+   font-size: 8px;
+   width: 40%;
+}
+
+
+
+
+/* <!-- -----------footer---------- --> 
+
+.foot-col2 ul{
+    flex-direction: column;
+}
+.foot-col2{
+    display: none;
+}
+.foot-col3{
+    display: none;
+}
+.foot-col4-bottom{
+    margin-bottom: 10px;
+}*/
+
+
 
